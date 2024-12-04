@@ -17,11 +17,13 @@ import PersonalScreen from './screens/PersonalScreen';
 // Icon
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Feather from 'react-native-vector-icons/Feather';
-const mainColor = '#935cfc';
+
+import constant from './utils/Constant';
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+  const {heightBottomTab, mainColor} = constant();
   return (
     <>
       <StatusBar />
@@ -31,7 +33,7 @@ export default function App() {
             screenOptions={{
               tabBarStyle: {
                 backgroundColor: '#0f0f0f',
-                height: 60,
+                height: heightBottomTab,
               },
               tabBarLabelStyle: {
                 fontSize: 12,

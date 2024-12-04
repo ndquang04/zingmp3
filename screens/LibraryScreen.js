@@ -1,9 +1,10 @@
-import {View, Text, StyleSheet, ScrollView} from 'react-native';
+import {StyleSheet, ScrollView} from 'react-native';
 import React from 'react';
 import CardSlider from '../components/CardSlider';
 import Banner from '../components/Banner';
 import Header from '../utils/Header';
 import Recently from '../components/Recently';
+import LibraryTabs from '../components/LibraryTabs';
 
 export default function LibraryScreen() {
   return (
@@ -12,6 +13,7 @@ export default function LibraryScreen() {
       <Banner />
       <CardSlider />
       <Recently />
+      <LibraryTabs />
     </ScrollView>
   );
 }
