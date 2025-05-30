@@ -1,4 +1,4 @@
-import {StyleSheet, View, useWindowDimensions} from 'react-native';
+import {StyleSheet, View, ScrollView} from 'react-native';
 import React from 'react';
 
 import Playlist from './tabs/Playlist';
@@ -25,7 +25,6 @@ export default function LibraryTabs() {
         screenOptions={{
           tabBarStyle: {
             backgroundColor: '#0f0f0f',
-            height: 60,
           },
           tabBarLabelStyle: {
             fontSize: 16,
@@ -45,6 +44,5 @@ export default function LibraryTabs() {
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
   },
 });
